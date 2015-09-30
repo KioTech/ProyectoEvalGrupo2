@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine on
 	Options -Indexes
-	RewriteBase /kiostarted
+	RewriteBase /ProyectoEvalGrupo2
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond $1 !^(index\.php|public|img|js|datos|content|robots\.txt|css)
@@ -9,5 +9,5 @@
 </IfModule>
 
 <IfModule !mod_rewrite.c>
-	ErrorDocument 404 /kiostarted/index.php
+	ErrorDocument 404 /ProyectoEvalGrupo2/index.php
 </IfModule>
