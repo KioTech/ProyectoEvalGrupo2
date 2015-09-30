@@ -48,13 +48,13 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1';
+$db['default']['hostname'] = '192.168.1.15';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'root';
 $db['default']['database'] = 'kiostarterg2';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = FALSE;
+$db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';

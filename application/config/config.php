@@ -10,15 +10,13 @@
 |
 |	http://example.com/
 |
-| If this is not set then CodeIgniter will guess the protocol, domain and
-| path to your installation.
+| If this is not set then CodeIgniter will try to guess the protocol, domain
+| and path to your installation. However, you should always configure this
+| explicitly and never rely on auto-guessing, especially in production
+| environments.
 |
 */
-$url1= $_SERVER ['SERVER_NAME'];
-$puerto= $_SERVER ['SERVER_PORT'];
-$url_host= $url1.':'.$puerto;
-
-$config['base_url']	= 'http://'+$url_host+'/kiostarted/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +28,7 @@ $config['base_url']	= 'http://'+$url_host+'/kiostarted/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -184,7 +182,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 1;
+$config['log_threshold'] = 0;
 
 /*
 |--------------------------------------------------------------------------
@@ -228,7 +226,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'bM8hrQ2l6RVgesAuwaLtvW5suMJ9ZDw1';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
